@@ -2,6 +2,7 @@
 var generatesBtn = document.getElementById('genera');
 var cancelBtn = document.getElementById('annulla');
 var price = 0.21;
+
 // click su genera
 
 generatesBtn.addEventListener('click', function(){
@@ -21,15 +22,14 @@ generatesBtn.addEventListener('click', function(){
     if (age == 1) {
       totalPrice = (totalPrice / 100 * 80).toFixed(2);
       document.getElementById('offerta').innerHTML = 'Sconto 20%';
-      document.getElementById('costobigl').innerHTML = totalPrice;
     }else if (age == 3) {
       totalPrice = (totalPrice / 100 * 60).toFixed(2);
       document.getElementById('offerta').innerHTML = 'Sconto 40%';
-      document.getElementById('costobigl').innerHTML = totalPrice;
     }else {
       document.getElementById('offerta').innerHTML = 'Prezzo Pieno';
-      document.getElementById('costobigl').innerHTML = totalPrice;
     }
+
+    document.getElementById('costobigl').innerHTML = totalPrice;
 
 
   }else {
