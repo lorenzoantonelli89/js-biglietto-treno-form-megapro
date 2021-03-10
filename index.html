@@ -2,7 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <title>Costo Biglietto Treno</title>
+    <!-- stile css -->
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
@@ -19,19 +23,19 @@
               <label for="">
                 Nome Cognome
               </label>
-              <input id="name" type="text" name="" value="name">
+              <input id="name" type="text" name="name" value="">
             </div>
             <div class="info">
               <label for="">
                 Km da percorrere
               </label>
-              <input id="distance" type="number" name="" value="distance">
+              <input id="distance" type="number" name="distance" value="">
             </div>
             <div class="info">
               <label for="">
                 Fascia d'età
               </label>
-              <select class="" name="">
+              <select id="age" class="" name="eta">
                 <option selected value="">
                   Seleziona un'opzione
                 </option>
@@ -56,54 +60,57 @@
       </div>
       <!-- biglietto -->
       <div class="row">
+
         <h1>
           Il tuo biglietto
         </h1>
+
         <div id="biglietto">
-          <h3>
-            Dettaglio passeggeri
-          </h3>
-          <table>
-            <thead>
-              <tr>
-                <th class="bg_grey">
-                  Nome Passeggero
-                </th>
-                <th>
-                  Offerta
-                </th>
-                <th>
-                  Carrozza
-                </th>
-                <th>
-                  Codice CP
-                </th>
-                <th>
-                  Costo Biglietto
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td id="">
+          <div class="content-biglietto">
+            <h3>
+              Dettaglio passeggeri
+            </h3>
+            <table>
+              <thead>
+                <tr>
+                  <th class="bg_grey pdr">
+                    Nome Passeggero
+                  </th>
+                  <th>
+                    Offerta
+                  </th>
+                  <th>
+                    Carrozza
+                  </th>
+                  <th>
+                    Codice CP
+                  </th>
+                  <th>
+                    Costo Biglietto
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="namepass" class="bg_grey">
 
-                </td>
-                <td id="">
+                  </td>
+                  <td id="offerta">
 
-                </td>
-                <td id="">
+                  </td>
+                  <td id="carrozza">
 
-                </td>
-                <td id="">
+                  </td>
+                  <td id="codiceCP">
 
-                </td>
-                <td id="">
+                  </td>
+                  <td id="costobigl">
 
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
